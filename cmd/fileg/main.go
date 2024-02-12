@@ -7,5 +7,5 @@ import (
 
 func main() {
     f := filegloss.New("../../fixtures/helloworld")
-    fmt.Print(f.InfoString())
+    fmt.Print(f.PrettyPrint())
 }

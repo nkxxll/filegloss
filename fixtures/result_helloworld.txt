@@ -1,0 +1,150 @@
+Name: helloworld
+HeaderType: elf.ET_DYN
+DataString: elf.ELFDATA2LSB
+OSABI: elf.ELFOSABI_NONE
+Version: elf.EV_CURRENT
+Machine: elf.EM_X86_64
+Exports:
+Sections:
+	Name: .interp
+	Type: elf.SHT_PROGBITS
+	Flags: elf.SHF_ALLOC
+	Name: .gnu.version
+	Type: elf.SHT_GNU_VERSYM
+	Flags: elf.SHF_ALLOC
+	Name: .init
+	Type: elf.SHT_PROGBITS
+	Flags: elf.SHF_ALLOC+elf.SHF_EXECINSTR
+	Name: .comment
+	Type: elf.SHT_PROGBITS
+	Flags: elf.SHF_MERGE+elf.SHF_STRINGS
+	Name: .fini_array
+	Type: elf.SHT_FINI_ARRAY
+	Flags: elf.SHF_WRITE+elf.SHF_ALLOC
+	Name: .note.ABI-tag
+	Type: elf.SHT_NOTE
+	Flags: elf.SHF_ALLOC
+	Name: .dynsym
+	Type: elf.SHT_DYNSYM
+	Flags: elf.SHF_ALLOC
+	Name: .rela.dyn
+	Type: elf.SHT_RELA
+	Flags: elf.SHF_ALLOC
+	Name: .plt
+	Type: elf.SHT_PROGBITS
+	Flags: elf.SHF_ALLOC+elf.SHF_EXECINSTR
+	Name: .fini
+	Type: elf.SHT_PROGBITS
+	Flags: elf.SHF_ALLOC+elf.SHF_EXECINSTR
+	Name: .init_array
+	Type: elf.SHT_INIT_ARRAY
+	Flags: elf.SHF_WRITE+elf.SHF_ALLOC
+	Name: 
+	Type: elf.SHT_NULL
+	Flags: 0x0
+	Name: .gnu.hash
+	Type: elf.SHT_GNU_HASH
+	Flags: elf.SHF_ALLOC
+	Name: .plt.got
+	Type: elf.SHT_PROGBITS
+	Flags: elf.SHF_ALLOC+elf.SHF_EXECINSTR
+	Name: .plt.sec
+	Type: elf.SHT_PROGBITS
+	Flags: elf.SHF_ALLOC+elf.SHF_EXECINSTR
+	Name: .eh_frame_hdr
+	Type: elf.SHT_PROGBITS
+	Flags: elf.SHF_ALLOC
+	Name: .dynamic
+	Type: elf.SHT_DYNAMIC
+	Flags: elf.SHF_WRITE+elf.SHF_ALLOC
+	Name: .symtab
+	Type: elf.SHT_SYMTAB
+	Flags: 0x0
+	Name: .note.gnu.property
+	Type: elf.SHT_NOTE
+	Flags: elf.SHF_ALLOC
+	Name: .note.gnu.build-id
+	Type: elf.SHT_NOTE
+	Flags: elf.SHF_ALLOC
+	Name: .dynstr
+	Type: elf.SHT_STRTAB
+	Flags: elf.SHF_ALLOC
+	Name: .eh_frame
+	Type: elf.SHT_PROGBITS
+	Flags: elf.SHF_ALLOC
+	Name: .bss
+	Type: elf.SHT_NOBITS
+	Flags: elf.SHF_WRITE+elf.SHF_ALLOC
+	Name: .strtab
+	Type: elf.SHT_STRTAB
+	Flags: 0x0
+	Name: .gnu.version_r
+	Type: elf.SHT_GNU_VERNEED
+	Flags: elf.SHF_ALLOC
+	Name: .text
+	Type: elf.SHT_PROGBITS
+	Flags: elf.SHF_ALLOC+elf.SHF_EXECINSTR
+	Name: .rodata
+	Type: elf.SHT_PROGBITS
+	Flags: elf.SHF_ALLOC
+	Name: .data
+	Type: elf.SHT_PROGBITS
+	Flags: elf.SHF_WRITE+elf.SHF_ALLOC
+	Name: .rela.plt
+	Type: elf.SHT_RELA
+	Flags: elf.SHF_ALLOC+elf.SHF_INFO_LINK
+	Name: .got
+	Type: elf.SHT_PROGBITS
+	Flags: elf.SHF_WRITE+elf.SHF_ALLOC
+	Name: .shstrtab
+	Type: elf.SHT_STRTAB
+	Flags: 0x0
+
+Symbols:
+Scrt1.o
+__abi_tag
+crtstuff.c
+deregister_tm_clones
+register_tm_clones
+__do_global_dtors_aux
+completed.0
+__do_global_dtors_aux_fini_array_entry
+frame_dummy
+__frame_dummy_init_array_entry
+main.c
+crtstuff.c
+__FRAME_END__
+
+_DYNAMIC
+__GNU_EH_FRAME_HDR
+_GLOBAL_OFFSET_TABLE_
+__libc_start_main@GLIBC_2.34
+_ITM_deregisterTMCloneTable
+data_start
+puts@GLIBC_2.2.5
+_edata
+_fini
+__data_start
+__gmon_start__
+__dso_handle
+_IO_stdin_used
+_end
+_start
+__bss_start
+main
+__TMC_END__
+_ITM_registerTMCloneTable
+__cxa_finalize@GLIBC_2.2.5
+_init
+
+DynamicSymbols:
+__libc_start_main
+_ITM_deregisterTMCloneTable
+puts
+__gmon_start__
+_ITM_registerTMCloneTable
+__cxa_finalize
+
+ImportedSymbols:
+__libc_start_main
+puts
